@@ -1,0 +1,3 @@
+export {
+    Acerca
+} from "./Acerca"

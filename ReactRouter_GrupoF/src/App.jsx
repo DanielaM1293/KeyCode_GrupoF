@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Acerca, Home, Productos, ProductosDetalle } from "./pages";
+//import { Acerca, Home, Productos, ProductosDetalle } from "./pages";
+import { Acerca} from "./pages"
 import Menu from "./components/Menu";
 import "./App.css";
 import { useState } from "react";
@@ -35,8 +36,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/acerca" element={<Acerca />} />
-        <Route path="/productos" element={<Productos productos={productos} />} />
-        <Route path="/productos/:id" element={<ProductosDetalle productos={productos} />} />
+        {/* <Route path="/productos" element={<Productos productos={productos} />} />
+        <Route path="/productos/:id" element={<ProductosDetalle productos={productos} />} /> */}
       </Routes>
     </BrowserRouter>
   );
