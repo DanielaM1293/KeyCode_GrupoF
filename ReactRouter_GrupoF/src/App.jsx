@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Acerca, Home, Productos, ProductosDetalle } from "./pages";
 import Menu from "./components/Menu";
+import { useState } from "react";
 import "./App.css"; // Importa el archivo CSS si necesitas personalizaciones adicionales
 
 function App() {
