@@ -2,15 +2,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Acerca, Home, Productos, ProductosDetalle } from "./pages";
 import Menu from "./components/Menu";
 import { useState } from "react";
-import "./App.css"; // Importa el archivo CSS si necesitas personalizaciones adicionales
-
+import "./App.css"; 
+import ajiaco from  "./assets/images/ajiaco.jpg";
+import bandeja_paisa from "./assets/images/bandeja_paisa.jpg";
+import arroz_pollo from "./assets/images/arroz-pollo.jpg";
+import mondongo from "./assets/images/mondongo.jpg";
 
 function App() {
   const [productos, setProductos] = useState([
-    { id: 1, nombre: "Ajiaco", precio: 15000, imagen: "/assets/images/ajiaco.jpg" },
-    { id: 2, nombre: "Bandeja Paisa", precio: 20000, imagen: "/assets/images/bandeja_paisa.jpg" },
-    { id: 3, nombre: "Arroz con Pollo", precio: 2000, imagen: "/assets/images/arroz-pollo.jpg" },
-    { id: 4, nombre: "Mondongo", precio: 10000, imagen: "/assets/images/mondongo.jpg" },
+    { id: 1, nombre: "Ajiaco", precio: 15000, img: ajiaco },
+    { id: 2, nombre: "Bandeja Paisa", precio: 20000, img: bandeja_paisa },
+    { id: 3, nombre: "Arroz con Pollo", precio: 2000, img: arroz_pollo },
+    { id: 4, nombre: "Mondongo", precio: 10000, img: mondongo },
   ]);
   
 
