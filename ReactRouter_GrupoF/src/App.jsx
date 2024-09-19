@@ -4,13 +4,15 @@ import Menu from "./components/Menu";
 import { useState } from "react";
 import "./App.css"; // Importa el archivo CSS si necesitas personalizaciones adicionales
 
+
 function App() {
   const [productos, setProductos] = useState([
-    { id: 1, nombre: "Ajiaco", precio: 15000 },
-    { id: 2, nombre: "Bandeja Paisa", precio: 20000 },
-    { id: 3, nombre: "Arroz con Pollo", precio: 2000 },
-    { id: 4, nombre: "Mondongo", precio: 10000 },
+    { id: 1, nombre: "Ajiaco", precio: 15000, imagen: "/assets/images/ajiaco.jpg" },
+    { id: 2, nombre: "Bandeja Paisa", precio: 20000, imagen: "/assets/images/bandeja_paisa.jpg" },
+    { id: 3, nombre: "Arroz con Pollo", precio: 2000, imagen: "/assets/images/arroz-pollo.jpg" },
+    { id: 4, nombre: "Mondongo", precio: 10000, imagen: "/assets/images/mondongo.jpg" },
   ]);
+  
 
   return (
     <BrowserRouter>
