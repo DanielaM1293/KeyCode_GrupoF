@@ -1,40 +1,41 @@
 import { NavLink } from "react-router-dom";
 import React from 'react';
+import { FaHome, FaInfoCircle, FaUtensils, FaServicestack } from 'react-icons/fa';
 
 const Menu = () => {
   return (
-    <nav className="flex justify-center space-x-6 bg-gray-800 p-4 rounded-lg shadow-lg">
-      <NavLink
-        className={({ isActive }) =>
-          `text-white hover:text-yellow-400 transition duration-300 ${isActive ? 'font-bold underline' : ''}`
+    <nav className="flex justify-center space-x-8 bg-gradient-to-r from-blue-600 to-blue-400 p-4 rounded-lg shadow-lg">
+      <NavLink 
+        to="/" 
+        className={({ isActive }) => 
+          `flex items-center text-white hover:text-yellow-200 transition duration-300 text-lg font-medium ${isActive ? 'underline' : ''}`
         }
-        to={"/"}
       >
-        Home
+        <FaHome className="mr-1" /> Home
       </NavLink>
-      <NavLink
-        className={({ isActive }) =>
-          `text-white hover:text-yellow-400 transition duration-300 ${isActive ? 'font-bold underline' : ''}`
+      <NavLink 
+        to="/acerca" 
+        className={({ isActive }) => 
+          `flex items-center text-white hover:text-yellow-200 transition duration-300 text-lg font-medium ${isActive ? 'underline' : ''}`
         }
-        to={"/acerca"}
       >
-        Acerca
+        <FaInfoCircle className="mr-1" /> Acerca
       </NavLink>
-      <NavLink
-        className={({ isActive }) =>
-          `text-white hover:text-yellow-400 transition duration-300 ${isActive ? 'font-bold underline' : ''}`
+      <NavLink 
+        to="/productos" 
+        className={({ isActive }) => 
+          `flex items-center text-white hover:text-yellow-200 transition duration-300 text-lg font-medium ${isActive ? 'underline' : ''}`
         }
-        to={"/productos"}
       >
-        Productos
+        <FaUtensils className="mr-1" /> Productos
       </NavLink>
-      <NavLink
-        className={({ isActive }) =>
-          `text-white hover:text-yellow-400 transition duration-300 ${isActive ? 'font-bold underline' : ''}`
+      <NavLink 
+        to="/servicios" 
+        className={({ isActive }) => 
+          `flex items-center text-white hover:text-yellow-200 transition duration-300 text-lg font-medium ${isActive ? 'underline' : ''}`
         }
-        to={"/servicios"}
       >
-        Servicios
+        <FaServicestack className="mr-1" /> Servicios
       </NavLink>
     </nav>
   );
