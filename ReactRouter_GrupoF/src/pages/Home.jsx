@@ -25,7 +25,7 @@ export const Home = () => {
         />
         <div className="absolute inset-0 bg-black opacity-40 rounded-lg"></div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-white z-10 animate__animated animate__fadeInDown">¡Bienvenidos a Restaurante F!</h1>
+          <h1 className="text-4xl font-bold text-white z-10 animate__animated animate__fadeInDown">¡Bienvenidos a Colombian Core!</h1>
         </div>
       </div>
 
